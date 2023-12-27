@@ -8,6 +8,7 @@ import java.util.*;
  * @author lordchariteigirimbabazi
  * CS10, FALL 2023
  */
+
 public class HMMModel {
     Map<String, Map<String, Double>> transitionProbabilities; // transition probability maps
     Map<String, Map<String, Double>> observationProbabilities; // observation probability maps
@@ -244,7 +245,7 @@ public class HMMModel {
             if (!line.isEmpty()) {
                 String[] words = line.toLowerCase().split(" ");
                 ArrayList<String> sentenceWords = new ArrayList<>(Arrays.asList(words));
-                sentenceWords.remove(sentenceWords.size()-1); //remove the dot
+                sentenceWords.remove(sentenceWords.size()-1); //remove the dot from file format
                 data.add(sentenceWords);
 
             }
