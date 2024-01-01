@@ -1,6 +1,6 @@
 # Sudi-A-Part-of-Speech-Tagging-Assistant
 POS tagging is crucial in understanding and processing natural language. It involves assigning words with tags like nouns, verbs, adjectives, etc., based on their context in a sentence. This functionality forms a core part of digital assistants and is vital for interpreting and responding to user input.
-Introduction
+
 
 "Sudi" is a digital assistant project aimed at addressing the speech understanding challenges in natural language processing. This tool implements a part-of-speech (POS) tagger, which labels each word in a sentence with its corresponding part of speech, such as noun, verb, adjective, etc. The project utilizes a Hidden Markov Model (HMM) approach to analyze and tag sentences efficiently.
 
