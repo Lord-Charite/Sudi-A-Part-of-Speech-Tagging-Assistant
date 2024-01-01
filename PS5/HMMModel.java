@@ -109,8 +109,7 @@ public class HMMModel {
     }
 
     /**
-     * Train the Hidden Markov Model using training data provided as lists of sentences and
-     * corresponding tags.
+     * Train the Hidden Markov Model using training data provided as lists of sentences and corresponding tags.
      *
      * @param sentencesList The list of sentences, where each sentence is represented as a List of words.
      * @param tagsList      The list of corresponding part-of-speech tags for each sentence.
@@ -337,10 +336,10 @@ public class HMMModel {
     public static void main(String[] args) throws IOException {
 
         HMMModel model = new HMMModel();
-        String sentencesFile = "PS5/brown-train-sentences.txt";
-        String tagsFile = "PS5/brown-train-tags.txt";
-        String sentencesFile1 = "PS5/brown-test-sentences.txt";
-        String tagsFile1 = "PS5/brown-test-tags.txt";
+        String sentencesFile = "brown-train-sentences.txt";
+        String tagsFile = "brown-train-tags.txt";
+        String sentencesFile1 = "brown-test-sentences.txt";
+        String tagsFile1 = "brown-test-tags.txt";
         List<ArrayList<String>> sentencesWords = model.loadFromFile(sentencesFile);
         List<ArrayList<String>> tagsWords = model.loadFromFile(tagsFile);
         model.trainModel(sentencesWords, tagsWords);
